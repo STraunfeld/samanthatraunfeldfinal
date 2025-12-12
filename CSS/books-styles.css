@@ -112,3 +112,54 @@ h2{
 h3{
     size:var(--size-one);
 }
+
+main{
+    margin-top:25px;
+}
+
+img{
+    height:auto;
+    width:65%;
+}
+
+.legionnaire,
+.bloodcursed,
+.anointed {
+    display:block;
+    float: left;
+    width:30%;
+}
+.legionnaire{
+    margin-left:25px;
+}
+main a{
+    color:var(--color-text);
+    display:block;
+    padding: 10px 15px;
+    text-decoration:none;
+}
+
+main a:visited{
+    text-decoration:underline;
+}
+
+main a:hover{
+    background-color:white;
+    color:rgba(0,9,46,1);
+    padding: 20px;
+}
+
+main a:focus{
+    color:rgba(121,13,13,1);
+    text-decoration:underline;
+}
+
+main a:active{
+    color:gold;
+    text-decoration:underline dotted;
+}
+
+footer{
+    clear:both;
+    color:var(--color-text);
+}
