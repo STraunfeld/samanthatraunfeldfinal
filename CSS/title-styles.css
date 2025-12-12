@@ -16,7 +16,7 @@
 } */
 
 html{
-    font-family: "Roboto", "dancing-script", sans-serif;
+    font-family: "Roboto", "Dancing Script", sans-serif;
     line-height:1.5;
     --color-text: rgb(192,192,192);
     --ratio:1.5;
@@ -102,7 +102,13 @@ nav li:hover .individualtitles{
 }
 
 h1{
-    size:var(--size-three);
+    background-image: linear-gradient(to bottom right, grey, var(--color-text), black, var(--color-text), grey);
+    background-clip:text;
+    color:transparent;
+    font-family:"Dancing Script", serif;
+    font-size: 100px;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 h2{
@@ -111,4 +117,55 @@ h2{
 
 h3{
     size:var(--size-one);
+}
+
+main{
+    max-width:95%;
+    margin: 0 auto;
+}
+
+img{
+    float:left;
+    height:auto;
+    padding-right: 50px;
+    width: 30%;
+}
+
+p{
+    color:var(--color-text);
+}
+
+.released{
+    font-size:var(--size-two);
+}
+
+main a{
+    color:var(--color-text);
+    display:block;
+    padding: 10px 15px;
+    text-decoration:none;
+}
+
+main a:visited{
+    text-decoration:underline;
+}
+
+main a:hover{
+    background-color:white;
+    color:rgba(0,9,46,1);
+    padding: 20px;
+}
+
+main a:focus{
+    color:rgba(121,13,13,1);
+    text-decoration:underline;
+}
+
+main a:active{
+    color:gold;
+    text-decoration:underline dotted;
+}
+
+footer{
+    clear:both;
 }
