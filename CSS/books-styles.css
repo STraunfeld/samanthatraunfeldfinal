@@ -39,7 +39,7 @@ body{
 .logo{
     left:0;
     height:auto;
-    position:fixed;
+    position:absolute;
     top:15px;
     width:150px;
 }

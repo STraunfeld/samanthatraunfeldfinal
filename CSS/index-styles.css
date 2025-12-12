@@ -16,7 +16,7 @@
 } */
 
 html{
-    font-family: "Roboto", "dancing-script", sans-serif;
+    font-family: "Roboto", "Dancing Script", sans-serif;
     line-height:1.5;
     --color-text: rgb(192,192,192);
     --ratio:1.5;
@@ -39,7 +39,7 @@ body{
 .logo{
     left:0;
     height:auto;
-    position:fixed;
+    position:absolute;
     top:15px;
     width:150px;
 }
@@ -102,13 +102,97 @@ nav li:hover .individualtitles{
 }
 
 h1{
-    size:var(--size-three);
+    background-image: linear-gradient(to bottom right, grey, var(--color-text), black, var(--color-text), grey);
+    background-clip:text;
+    color:transparent;
+    font-family:"Dancing Script", serif;
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
+.banner-container{
+    color:rgba(0,9,46,1);
+    position:relative;
+    text-align:center;
+    width:100%;
+}
+
+.banner-container img{
+    display:block;
+    height:auto;
+    width:100%;
+}
+
+.banner-text {
+    left:50%;
+    padding: 10px 20px;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+}
+
+.banner-text small{
+    left:65%;
+    position: absolute;
+    top: 60%;
+}
 h2{
     size:var(--size-two);
 }
 
+.socials{
+    color:var(--color-text);
+    margin-top:50px;
+    text-align:center;
+    text-transform: uppercase;
+}
+
 h3{
     size:var(--size-one);
+}
+
+.socialmedia li{
+    display:inline-block;
+    padding:1rem;
+    position:relative;
+}
+
+.socialmedia a{
+    color:var(--color-text);
+    display:block;
+    padding: 10px 15px;
+    text-decoration:none;
+}
+
+.socialmedia a:visited{
+    text-decoration:underline;
+}
+
+.socialmedia a:hover{
+    background-color:white;
+    color:rgba(0,9,46,1);
+    padding: 20px;
+}
+
+.socialmedia a:focus{
+    color:rgba(121,13,13,1);
+    text-decoration:underline;
+}
+
+.socialmedia a:active{
+    color:gold;
+    text-decoration:underline dotted;
+}
+
+.instagram,
+.threads {
+    display:block;
+    float:left;
+    width: 50%;
+}
+
+footer{
+    clear:both;
+    color:var(--color-text);
 }
