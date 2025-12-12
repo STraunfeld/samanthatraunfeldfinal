@@ -36,6 +36,14 @@ body{
     background-color: rgba(0,9,46,.65);
 }
 
+.logo{
+    left:0;
+    height:auto;
+    position:fixed;
+    top:15px;
+    width:150px;
+}
+
 nav{
     background-color: rgba(0,9,46,1);
     list-style-type:none;
@@ -51,9 +59,30 @@ nav li{
 }
 
 nav a{
+    color:var(--color-text);
     display:block;
     padding: 10px 15px;
     text-decoration:none;
+}
+
+nav a:visited{
+    text-decoration:underline;
+}
+
+nav a:hover{
+    background-color:white;
+    color:rgba(0,9,46,1);
+    padding: 20px;
+}
+
+nav a:focus{
+    color:rgba(121,13,13,1);
+    text-decoration:underline;
+}
+
+nav a:active{
+    color:gold;
+    text-decoration:underline dotted;
 }
 
 .individualtitles{
@@ -63,7 +92,23 @@ nav a{
     left:0;
 }
 
+.title{
+    color:rgba(0,9,46,.65);
+}
+
 nav li:hover .individualtitles{
     background-color:rgba(255,255,255,.65);
     display:block;
+}
+
+h1{
+    size:var(--size-three);
+}
+
+h2{
+    size:var(--size-two);
+}
+
+h3{
+    size:var(--size-one);
 }
