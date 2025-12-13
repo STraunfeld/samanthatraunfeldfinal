@@ -16,7 +16,7 @@
 } */
 
 html{
-    font-family: "Roboto", "dancing-script", sans-serif;
+    font-family: 'Roboto', 'Dancing Script', sans-serif;
     line-height:1.5;
     --color-text: rgb(192,192,192);
     --ratio:1.5;
@@ -56,6 +56,7 @@ nav li{
     display:inline-block;
     padding:1rem;
     position:relative;
+    transition:all 1s ease-out;
 }
 
 nav a{
@@ -99,6 +100,7 @@ nav a:active{
 nav li:hover .individualtitles{
     background-color:rgba(255,255,255,.65);
     display:block;
+    transition:all 1s ease-out;
 }
 
 main{
@@ -110,12 +112,13 @@ h1{
     background-image: linear-gradient(to bottom right, grey, var(--color-text), black, var(--color-text), grey);
     background-clip:text;
     color:transparent;
-    font-family:"Dancing Script", serif;
+    font-family:'Dancing Script', serif;
     font-size: 100px;
     text-transform: uppercase;
 }
 
 h2{
+    color:var(--color-text);
     size:var(--size-two);
 }
 
@@ -127,6 +130,21 @@ h3{
 p{
     color:var(--color-text);
     font-size:var(--size-one)
+}
+
+ul{
+    list-style-type: none;
+    padding-left:0;
+}
+
+.favs li::before{
+    content: "\1F4DA";
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+li{
+    color:var(--color-text);
 }
 
 /*image has to start off square to get a circle. Went back to html and changed the photo*/
